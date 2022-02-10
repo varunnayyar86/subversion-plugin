@@ -200,7 +200,7 @@ built in wget command. Instead the following contents can be added to
     REM                found on Jenkins under "user/configure/API token"
     REM                User needs "Job/Read" permission on Jenkins
     SET AUTHORIZATION=""
-    "%CSCRIPT%" "%VBSCRIPT%" "%REPOS%" %2 "%SVNLOOK%" %JENKINS% %AUTHORIZATION%
+    "%CSCRIPT%" "%VBSCRIPT%" "%REPOS%" "%REV%" "%SVNLOOK%" %JENKINS% %AUTHORIZATION%
 
 The batch file relies on the following VBScript being available in the
 file designated by the `VBSCRIPT` variable above:
